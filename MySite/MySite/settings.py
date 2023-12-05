@@ -31,12 +31,13 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
-    'django.contrib.admin',
-    'django.contrib.auth',
-    'django.contrib.contenttypes',
-    'django.contrib.sessions',
-    'django.contrib.messages',
-    'django.contrib.staticfiles',
+    'polls.apps.PollsConfig', # Odniesienie do klasy konfiguracyjnej
+    'django.contrib.admin',  # Panel administracyjny
+    'django.contrib.auth', # System uwierzytelniania
+    'django.contrib.contenttypes', # Framework dla typów treści
+    'django.contrib.sessions', # Framework dla sesji
+    'django.contrib.messages', # Framework powiadomień
+    'django.contrib.staticfiles', # Framework do zarządzania plikami statycznymi
 ]
 
 MIDDLEWARE = [
@@ -104,7 +105,7 @@ AUTH_PASSWORD_VALIDATORS = [
 # https://docs.djangoproject.com/en/5.0/topics/i18n/
 
 LANGUAGE_CODE = 'en-us'
-
+TIME_ZONE = True
 TIME_ZONE = 'UTC'
 
 USE_I18N = True
